@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_main"
+    android:backgroundTint="@null"
+    android:id="@+id/drawer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:text="XIN CHÀO:"
+                    android:textColor="#FAF9F9"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:padding="20dp"/>
+                <TextView
+                    android:id="@+id/txtname"
+                    android:layout_width="240dp"
+                    android:text="NGUYỄN TRỌNG TẤN"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:padding="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical"
+            android:layout_margin="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <Button
+                    android:id="@+id/btnPhysicalActivity"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Vận động thể chất"
+                    android:background="@drawable/button_main"
+                    app:backgroundTint="@null"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/btnMindfulness"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/button_main"
+                    android:text="Tinh thần"
+                    app:backgroundTint="@null" />
+
+                <Button
+                    android:id="@+id/btnSleep"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Ngủ nghỉ"
+                    android:background="@drawable/button_main"
+                    app:backgroundTint="@null"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+                <Button
+                    android:id="@+id/btnNutrition"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Ăn uống"
+                    android:background="@drawable/button_main"
+                    app:backgroundTint="@null"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/btnExercise"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Bài tập"
+                    android:background="@drawable/button_main"
+                    app:backgroundTint="@null"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/btnPsychology"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Tư vấn tâm lý"
+                    android:background="@drawable/button_main"
+                    app:backgroundTint="@null"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/menu_navigation"
+        />
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
